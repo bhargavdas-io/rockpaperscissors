@@ -1,5 +1,6 @@
 function userChoice() {
-  const userchoice = prompt("Choose between 'Rock', 'Paper' and 'Scissor'");
+  const input = prompt("Choose between 'Rock', 'Paper' and 'Scissor'");
+  let userchoice = input.toUpperCase();
   return userchoice;
 }
 
@@ -21,17 +22,17 @@ let result = "";
 
 if (returnpc == userreturn) {
   result = "Tie :|";
-} else if (userreturn == "Rock" && returnpc == "Scissor") {
+} else if (userreturn == "ROCK" && returnpc == "Scissor") {
   result = "You Win :)";
-} else if (userreturn == "Rock" && returnpc == "Paper") {
+} else if (userreturn == "ROCK" && returnpc == "Paper") {
   result = "You Lose :)";
-} else if (userreturn == "Paper" && returnpc == "Scissor") {
+} else if (userreturn == "PAPER" && returnpc == "Scissor") {
   result = "You Lose :(";
-} else if (userreturn == "Paper" && returnpc == "Rock") {
+} else if (userreturn == "PAPER" && returnpc == "Rock") {
   result = "You Win :)";
-} else if (userreturn == "Scissor" && returnpc == "Rock") {
+} else if (userreturn == "SCISSOR" && returnpc == "Rock") {
   result = "You Lose :(";
-} else if (userreturn == "Scissor" && returnpc == "Paper") {
+} else if (userreturn == "SCISSOR" && returnpc == "Paper") {
   result = "You Win :)";
 } else {
   result = "Please enter a valid choice";
