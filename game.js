@@ -38,3 +38,18 @@ if (returnpc == userreturn) {
 }
 
 console.log(result);
+
+// Add score keeping logic for both human and pc
+
+let userScore = 0;
+let pcScore = 0;
+
+if (result == "You Win :)") {
+  userScore++;
+} else if (result == "You Lose :(") {
+  pcScore++;
+}
+
+let score = `Your Score: ${userScore} and PC Score: ${pcScore}`;
+
+console.log(score);
